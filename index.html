@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div>
+        <h3 class="header">Sizin İçin Seçtiklerimiz</h3>
+    </div>
+    <div class="main">
+        <div class="search">
+            <div>
+                <ul class="menu">
+                    <li class="menu-item"><button class="category1">Size Özel</button></li>
+                    <li class="menu-item"><button class="category2">Tamir, Tadilat Gereçleri</button></li>
+                    <li class="menu-item"><button class="category3">Mobilya</button></li>
+                    <li class="menu-item"><button class="category4">Sağlık, Medikal</button></li>
+                    <li class="menu-item"><button class="category5">Dizüstü Bilgisayar (Laptop)</button></li>
+                    <li class="menu-item"><button class="category6">Isıtma, Soğutma Sistemi</button></li>
+                </ul>
+            </div>
+        </div>
+                <div class="container"></div>
+    </div>
+
+    <script>
+        var specialBtn = document.querySelector(".category1");
+        specialBtn.addEventListener("click", function () {
+            renderDataSpecial();
+        });
+
+        var repairBtn = document.querySelector(".category2");
+        repairBtn.addEventListener("click", function () {
+            renderDataRepair();
+        });
+
+        var furnitureBtn = document.querySelector(".category3");
+        furnitureBtn.addEventListener("click", function () {
+            renderDataFurniture();
+        });
+
+        var medicalBtn = document.querySelector(".category4");
+        medicalBtn.addEventListener("click", function () {
+            renderDataMedical();
+        });
+
+        var techBtn = document.querySelector(".category5");
+        techBtn.addEventListener("click", function () {
+            renderDataTechnology();
+        });
+
+        var systemBtn = document.querySelector(".category6");
+        systemBtn.addEventListener("click", function () {
+            renderDataSystem();
+        });
+    </script>
+
+</body>
+
+</html>
